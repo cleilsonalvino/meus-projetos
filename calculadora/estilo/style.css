@@ -1,76 +1,77 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
+  padding: 0;
+  margin: 0;
   
-  body {
-    background-color: #3A405A;
-  }
-  
-  .calculadora {
-    width: 300px;
-    height: 500px;
-    margin: 15vh auto;
-    padding: 5px;
-    background-color: #1E2749;
-    border-radius: 20px;
-    
-  }
-  
-  table {
-   border-spacing: 6px;
-   padding-top: 20px;
-   margin: auto;
-  }
-  
-  td {
-     background-color: #273469;
-     padding: 5px;
-     width: 40px;
-     height: 50px;
-     border-radius: 5px;
-     
-  }
-  
-  .calculadora > h1 {
-    padding: 10px 0px 5px 0px;
-    color: white;
-    text-align: center;
-    font-family: "Arial";
-  }
-  
-  
-  p {
-    text-align: right;
-    margin: auto;
-    width: 215px;
-    height: 30px;
-    padding:15px;
-    background-color: #FAFAFF;
-    color: Black;
-    border-radius: 6px;
-    font-size: 16px;
-    font-family: "Arial";
-  }
-  
-  button {
-    padding: 20px;
-    width: 40px 50px;
-    height: 50px;
-    text-align: center;
-    color: white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
+}
 
-  button:hover, td:hover{
-    background-color: #1E2749;
-  }
+body {
+  background-color: #3A405A;
+  
+}
 
-  h5 {
-    text-align: center;
-    font-family: "Arial";
-    padding-top: 10px;
-    color: white;
-  }
+.calculadora {
+  width: 300px;
+  height: 500px;
+  margin: 15vh auto;
+  padding: 5px;
+  background-color: #1E2749;
+  border-radius: 20px;
+  
+}
+
+table {
+ border-spacing: 6px;
+ padding-top: 20px;
+ margin: auto;
+ 
+}
+
+td {
+   background-color: #273469;
+   padding: 5px;
+   width: 40px;
+   height: 50px;
+   border-radius: 5px;
+   
+}
+
+.calculadora > h1 {
+  padding: 10px 0px 5px 0px;
+  color: white;
+  text-align: center;
+  font-family: "Arial";
+  
+}
+
+
+p {
+  text-align: right;
+  margin: auto;
+  width: 215px;
+  height: 30px;
+  padding:10px;
+  background-color: #FAFAFF;
+  color: Black;
+  border-radius: 6px;
+  font-size: 24px;
+  font-family: "Arial";
+  
+}
+
+button {
+  padding: 20px;
+  width: 40px 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  
+}
+
+h5 {
+  text-align: center;
+  font-family: "Arial";
+  padding-top: 10px;
+  color: white;
+}
