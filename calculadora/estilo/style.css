@@ -81,6 +81,7 @@ button {
   background-image: linear-gradient(120deg, #17BEBB,#EDB88B, #FAD8D6);
   border-radius: 20px;
   box-shadow: 1px 1px 5px #00000062;
+  background-size: cover;
   
   
 }
