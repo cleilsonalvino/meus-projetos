@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, #033F63, #28666E);
+  background-color: #033F63;
   height: 100%;
 }
 
@@ -40,7 +40,7 @@ table {
 button {
    background-color: transparent;
    
-   padding: 25px;
+   padding: 20px;
    border-radius: 5px;
    
    
@@ -86,8 +86,8 @@ p {
 
 
 .calculadora {
-  width: 300px;
-  height: 500px;
+  width: 250px;
+  height: 425px;
   margin: auto;
   margin-top: 10px;
   padding: 5px;
@@ -106,6 +106,7 @@ p {
   font-family: "Arial";
   
 }
+
 
 
 

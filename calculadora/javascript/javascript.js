@@ -1,7 +1,11 @@
     
       function inserir (num) {
+        var operadores = document.getElementById('operadores')
         var numero = document.getElementById('resultado').innerHTML;
         document.getElementById('resultado').innerHTML = numero + num;
+
+        operadores = []
+
         }
         function clean () {
           document.getElementById('resultado').innerHTML = ''
