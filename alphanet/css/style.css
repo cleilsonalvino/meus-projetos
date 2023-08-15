@@ -17,9 +17,8 @@
 
 body {
     background-color: antiquewhite;
-    width: 400px;
-    margin: auto;
     color: white;
+    
 }
 
 
@@ -29,7 +28,6 @@ nav {
     padding: 20px ;
     background-color: #000000;
     color: white;
-    width: 400px;
     margin: auto;
     text-align: center;
 }
@@ -38,19 +36,15 @@ nav > a {
     color: #FFF;
     text-align: center;
     font-family: var(--font-padrao);
-    font-size: 12px;
+    font-size: 20px;
     font-style: normal;
     padding:10px;
-    spa
     text-decoration: none;
-    border: 1px solid rgb(226, 70, 70);
     
 }
 
 
 .cabecalho {
-    width: 400px;
-    margin: auto;
     background-color: black;
     font-family: var(--font-destaque);
     text-align: center;
@@ -72,16 +66,24 @@ nav > a {
     padding: 20px;
 }
 
+.imagem-cab {
+    text-align: center;
+}
 
 main {
-    width: 400px;
     background-color: rgb(0, 0, 0);
     padding: 20px;
+    margin: auto;
+    text-align: center;
 }
+
 
 article {
     background-color: #000000;
     margin-bottom: 30px;
+    height: 500px;
+    padding: 50px;
+
 }
 
 article > .text > h2 {
@@ -90,12 +92,13 @@ article > .text > h2 {
     display: inline-block;
     text-align: center;
     padding: 10px;
+    font-size: 48px;
 }
 
 article > .text > p {
     color: white;
     font-family: var(--font-padrao);
-    font-size: 12px;
+    font-size: 24px;
     padding: 5px;
     text-indent: 1em;
     font-weight: 100;
@@ -103,7 +106,7 @@ article > .text > p {
 }
 
 article > .text {
-    width: 200px;
+    width: 600px;
     display: inline-block;
 } 
 
