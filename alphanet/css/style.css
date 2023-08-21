@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 :root {
     --cor01: #000A66;
     --cor02: #0012B3;
@@ -8,6 +9,7 @@
 
     --font-padrao:'Ubuntu', sans-serif;
     --font-destaque: 'Roboto', sans-serif;
+    
 }
 
 * {
@@ -16,147 +18,45 @@
 }
 
 body {
-    background-color: antiquewhite;
-    color: white;
-    
-}
-
-
-
-nav {
-    display: flexbox;
-    padding: 20px ;
-    background-color: #000000;
-    color: white;
-    margin: auto;
-    text-align: center;
-}
-
-nav > a {
-    color: #FFF;
-    text-align: center;
     font-family: var(--font-padrao);
-    font-size: 20px;
-    font-style: normal;
-    padding:10px;
-    text-decoration: none;
-    
 }
 
+.navegacao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: black;
+    padding: 30px;
+    width: 100vw;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    font-family: var(--font-destaque);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 20px;
+    color: white;
+    
+}
 
 .cabecalho {
+    display: flex;
+    width: 100vw;
     background-color: black;
-    font-family: var(--font-destaque);
+    height: 80vh;
+}
+
+.efeito {
+    display: flex;
     text-align: center;
-    display: block;
-    padding: 20px;
-
-}
-
-.cabecalho > h1{
-    font-size: 45px;
-    color: white;
-    text-align: center;
-
-}
-
-.cabecalho > p {
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.imagem-cab {
-    text-align: center;
-}
-
-main {
-    background-color: rgb(0, 0, 0);
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-}
-
-
-article {
-    background-color: #000000;
-    margin-bottom: 30px;
-    height: 500px;
-    padding: 50px;
-
-}
-
-article > .text > h2 {
-    color: white;
-    font-family: var(--font-destaque);
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    font-size: 48px;
-}
-
-article > .text > p {
-    color: white;
-    font-family: var(--font-padrao);
-    font-size: 24px;
-    padding: 5px;
-    text-indent: 1em;
-    font-weight: 100;
-
-}
-
-article > .text {
-    width: 600px;
-    display: inline-block;
-} 
-
-article > .imagem-cab {
-    display: inline-block;
-    padding: 20px;
-}
-
-li {
-    list-style: none;
-    font-family: var(--font-padrao);
-}
-
-div.revenda-pai {
-    
-}
-
-div.revenda {
-    padding: 10px;
-    width: 350px;
-    margin: auto;
-
-    
-}
-
-div.revenda > h1 {
-    font-family: var(--font-destaque);
-    font-size: 28px;
-    text-align: center;
-}
-
-.revenda > .revenda-users {
-    background-image: linear-gradient(to bottom, #000A66, #4656EA);
-    font-family: var(--font-padrao);
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px rgba(116, 137, 253, 0.459);
-}
-
-.revenda > .revenda-users > button {
-    color: #4656EA;
-    padding: 10px;
-    background-color: #000A66;
-    border: none;
-    border-radius: 10px;
+    background-color: white;
     width: 100px;
-    margin-top: 20px;
+    height: 100px;
 }
