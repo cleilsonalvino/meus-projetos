@@ -37,7 +37,7 @@ header .navbar {
 header .back {
     position: relative;
     top: 20%;
-    right: 20%;
+    right: 10%;
 }
 
 .navbar .logo {
@@ -133,7 +133,7 @@ header .back {
     }
     
     header {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background-image: linear-gradient(45deg, #00187A, #0028C7);
     }
@@ -159,7 +159,8 @@ header .back {
     header .back {
         position: relative;
         top: 20%;
-        right: 20%;
+        right: 10%;
+    
     }
     
     .navbar .logo {
@@ -223,7 +224,7 @@ header .back {
         color: #67faff;
         margin-left: 10px;
         animation: typing 8s steps(26) infinite;
-        white-space: wrap;
+        white-space: nowrap;
         overflow: hidden;
         border-right: 4px solid #aabbff;
     
