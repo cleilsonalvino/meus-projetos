@@ -142,7 +142,7 @@ header .back {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         background-image: linear-gradient(45deg, #00187A, #0028C7);
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
     }
