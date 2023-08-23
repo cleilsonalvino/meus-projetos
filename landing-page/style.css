@@ -101,7 +101,7 @@ header .back {
     color: #67faff;
     margin-left: 10px;
     animation: typing 8s steps(26) infinite;
-    white-space: nowrap;
+    white-space: wrap;
     overflow: hidden;
     border-right: 4px solid #aabbff;
 
