@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+
+/* celular deitado */
 @media (min-width:600px) and (orientation: landscape){
 
 
@@ -123,9 +125,125 @@ header .back {
 
 }
 
+/* celulares em pe */
+@media (max-width:400px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    header {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(45deg, #00187A, #0028C7);
+    }
+    
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-image: linear-gradient(45deg, #00187A, #0028C7);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+    }
+    
+    header .navbar {
+        width: 90%;
+        margin: 15px auto 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    header .back {
+        position: relative;
+        top: 20%;
+        right: 10%;
+    
+    }
+    
+    .navbar .logo {
+        width: 130px;
+        height: 60px;
+    }
+    
+    .navbar .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    
+    }   
+    .navbar .menu {
+        display: flex;
+        
+    }
+    
+    .navbar .menu li {
+        list-style: none;
+        margin: 0 10px;
+    
+    }
+    
+    .navbar .menu li a {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+        color: #4B6EFB;
+    }
+    
+    .navbar .menu li a:hover {
+        color: white;
+    }
+    
+    .content {
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        color: white;
+    }
+    
+    .content .text {
+        font-size: 27px;
+        color: #aabbff;
+    }
+    
+    .content .name {
+        font-size: 48px;
+        color: #aabbff;
+        margin: -20px 0 0 -3px;
+    }
+    
+    .content .job {
+        font-size: 32px;
+        color: #aabbff;
+        display: flex;
+    }
+    
+    .content .job .type-text {
+        color: #67faff;
+        margin-left: 10px;
+        animation: typing 8s steps(26) infinite;
+        white-space: wrap;
+        overflow: hidden;
+        border-right: 4px solid #aabbff;
+    
+    }
 
 
-        * {
+
+
+    
+}
+
+/* pcs */
+@media (min-width:401px) {
+
+    
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -229,3 +347,21 @@ header .back {
         border-right: 4px solid #aabbff;
     
     }
+
+    @keyframes typing {
+        0% {
+            width: 0ch;
+        }
+    
+        50% {
+            width: 24ch;
+        }
+    
+        100% {
+            width: 0ch;
+        }
+    }
+
+
+    
+}
