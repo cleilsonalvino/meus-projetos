@@ -36,7 +36,7 @@ header .navbar {
     
 }
 
-header .back {
+header .back picture{
     position: relative;
     top: 20%;
     right: 10%;
@@ -153,10 +153,10 @@ header .back {
     
     header .navbar {
         width: 80%;
-        margin: 15px auto 15px auto;
+        margin: 30px auto 30px auto;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         
     }
     
@@ -167,8 +167,8 @@ header .back {
     }
     
     .navbar .logo {
-        width: 130px;
-        height: 60px;
+        width: 0px;
+        height: 0px;
     }
     
     .navbar .logo img {
@@ -182,7 +182,7 @@ header .back {
     
     .navbar .menu li {
         list-style: none;
-        margin: 0 10px;
+        margin: 0 20px;
     
     }
     
