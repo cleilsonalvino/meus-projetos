@@ -127,7 +127,7 @@ header .back {
 }
 
 /* celulares em pe */
-@media (max-width:400px) {
+@media (max-width:600px) {
 
     * {
         padding: 0;
@@ -153,13 +153,18 @@ header .back {
     
     header .navbar {
         width: 80%;
-        margin: 10px auto 10px auto;
+        margin: 15px auto 15px auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
         
     }
     
+    header .back {
+        position: relative;
+        top: 20%;
+        right: 10%;
+    }
     
     .navbar .logo {
         width: 130px;
@@ -177,13 +182,13 @@ header .back {
     
     .navbar .menu li {
         list-style: none;
-        margin: 0 8px;
+        margin: 0 10px;
     
     }
     
     .navbar .menu li a {
         text-decoration: none;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 500;
         color: #4B6EFB;
     }
@@ -200,18 +205,18 @@ header .back {
     }
     
     .content .text {
-        font-size: 24px;
+        font-size: 36px;
         color: #aabbff;
     }
     
     .content .name {
-        font-size: 36px;
+        font-size: 48px;
         color: #aabbff;
         margin: -15px 0 0 -3px;
     }
     
     .content .job {
-        font-size: 16px;
+        font-size: 24px;
         color: #aabbff;
         display: flex;
     }
@@ -219,10 +224,7 @@ header .back {
     .content .job .type-text {
         color: #67faff;
         margin-left: 10px;
-        animation: typing 8s steps(26) infinite;
         white-space: wrap;
-        overflow: hidden;
-        border-right: 4px solid #aabbff;
     
     }
 
@@ -233,7 +235,7 @@ header .back {
 }
 
 /* pcs */
-@media (min-width:401px) {
+@media (min-width:601px) {
 
     
     * {
