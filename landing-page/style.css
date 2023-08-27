@@ -40,6 +40,7 @@ header .back {
     position: relative;
     top: 20%;
     right: 10%;
+    
 }
 
 .navbar .logo {
@@ -151,20 +152,14 @@ header .back {
     }
     
     header .navbar {
-        width: 90%;
-        margin: 15px auto 15px auto;
+        width: 80%;
+        margin: 10px auto 10px auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         
     }
     
-    header .back {
-        position: relative;
-        top: 20%;
-        right: 10%;
-    
-    }
     
     .navbar .logo {
         width: 130px;
@@ -172,10 +167,8 @@ header .back {
     }
     
     .navbar .logo img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    
+        width: 0%;
+        height: 0%;
     }   
     .navbar .menu {
         display: flex;
@@ -184,13 +177,13 @@ header .back {
     
     .navbar .menu li {
         list-style: none;
-        margin: 0 10px;
+        margin: 0 8px;
     
     }
     
     .navbar .menu li a {
         text-decoration: none;
-        font-size: 17px;
+        font-size: 12px;
         font-weight: 500;
         color: #4B6EFB;
     }
@@ -207,18 +200,18 @@ header .back {
     }
     
     .content .text {
-        font-size: 27px;
+        font-size: 24px;
         color: #aabbff;
     }
     
     .content .name {
-        font-size: 48px;
+        font-size: 36px;
         color: #aabbff;
-        margin: -20px 0 0 -3px;
+        margin: -15px 0 0 -3px;
     }
     
     .content .job {
-        font-size: 32px;
+        font-size: 16px;
         color: #aabbff;
         display: flex;
     }
