@@ -28,7 +28,7 @@ body {
     list-style: none;
     background-color: black;
     padding: 30px;
-    width: 100vw;
+    width: 80%;
 }
 
 
@@ -51,12 +51,4 @@ a {
     width: 100vw;
     background-color: black;
     height: 80vh;
-}
-
-.efeito {
-    display: flex;
-    text-align: center;
-    background-color: white;
-    width: 100px;
-    height: 100px;
 }
