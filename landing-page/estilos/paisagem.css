@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #00187A, #0028C7);
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(45deg, #00187A, #0028C7);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
+
+header .navbar {
+    width: 90%;
+    margin: 20px auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .back picture{
+    position: relative;
+    top: 20%;
+    right: 10%;
+    
+}
+
+.navbar .logo {
+    width: 150px;
+    height: 80px;
+}
+
+.navbar .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}   
+.navbar .menu {
+    display: flex;
+    
+}
+
+.navbar .menu li {
+    list-style: none;
+    margin: 0 10px;
+
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4B6EFB;
+}
+
+.navbar .menu li a:hover {
+    color: white;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    color: white;
+}
+
+.content .text {
+    font-size: 27px;
+    color: #aabbff;
+}
+
+.content .name {
+    font-size: 72px;
+    color: #aabbff;
+    margin: -20px 0 0 -3px;
+}
+
+.content .job {
+    font-size: 40px;
+    color: #aabbff;
+    display: flex;
+}
+
+.content .job .type-text {
+    color: #67faff;
+    margin-left: 10px;
+    animation: typing 8s steps(26) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #aabbff;
+
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 24ch;
+    }
+
+    100% {
+        width: 0ch;
+    }
+}
