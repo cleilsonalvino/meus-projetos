@@ -14,7 +14,7 @@ body {
     height: 100vh;
     width: 100vw;
     background: rgb(204, 204, 204);
-    background: url(/fundo-rel.png);
+    background: url(fundo-rel.png);
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align-last: center;
-    background-image: url(/fundo-rel.png);
+    background-image: url(fundo-rel.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
