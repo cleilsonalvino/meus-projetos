@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.crono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crono > span {
+    font-size: 48px;
+}
+
+.crono > .botao {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.crono > #start {
+    background-color: lightgreen;
+    color: aliceblue;
+}
+
+.crono > #stop {
+    background-color: lightcoral;
+}
