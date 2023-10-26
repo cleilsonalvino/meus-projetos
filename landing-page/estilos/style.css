@@ -1,163 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@charset "UTF-8"; 
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #000f49;
+    width: 100vw;
+    height: 100vh;
+    font-family: cursive;
+}
 
-/* todas as telas */
+header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 600px;
+    background: -webkit-linear-gradient(#000f49, #03256C, #2541B2, #000f49);
+}
+
+header nav .navbar .menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+header nav .navbar .menu li{
+    text-decoration: none;
+    margin: 20px 0px;
+
+}
+
+header nav .navbar .menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
     
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    header {
-        width: 100vw;
-        height: 100vh;
-        background-image: linear-gradient(45deg, #00187A, #0028C7);
-        z-index: 1;
-    }
-    
-    header nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        background-image: linear-gradient(45deg, #00187A, #0028C7);
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
-        z-index: 3;
-    }
-    
-    header .navbar {
-        width: 90%;
-        margin: 15px auto 15px auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        
-    }
-    
-    header .back {
-        position: relative;
-        top: 20%;
-        right: 10%;
-    
-    }
-    
-    .navbar .logo {
-        width: 130px;
-        height: 60px;
-    }
-    
-    .navbar .logo img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    
-    }   
-    .navbar .menu {
-        display: flex;
-        
-    }
-    
-    .navbar .menu li {
-        list-style: none;
-        margin: 0 10px;
-    
-    }
-    
-    .navbar .menu li a {
-        text-decoration: none;
-        font-size: 17px;
-        font-weight: 500;
-        color: #4B6EFB;
-    }
-    
-    .navbar .menu li a:hover {
-        color: white;
-    }
-    
-    .content {
-        position: absolute;
-        top: 40%;
-        left: 7%;
-        color: white;
-        z-index: 2;
-    }
-    
-    .content .text {
-        font-size: 27px;
-        color: #aabbff;
-    }
-    
-    .content .name {
-        font-size: 48px;
-        color: #aabbff;
-        margin: -20px 0 0 -3px;
-    }
-    
-    .content .job {
-        font-size: 32px;
-        color: #aabbff;
-        display: flex;
-    }
-    
-    .content .job .type-text {
-        color: #67faff;
-        margin-left: 10px;
-        animation: typing 8s steps(26) infinite;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 4px solid #aabbff;
-    
+}
+
+header .content {
+    display: block;
+    margin: 20px 0px 20px 55px;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    top: 20%;
+}
+
+header .content .text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+header .content .text-content .text {
+    font-size: 32px;
+}
+
+header .content .text-content .name {
+    font-size: 48px;
+}
+
+header .content .text-content .job {
+    display: flex;
+    font-size: 24px;
+    font-size: 1em;
+}
+
+header .content .text-content .job .type-text {
+    animation: digitar 8s steps(30, end) infinite;
+    border-right: 5px solid white;
+    overflow: hidden;
+    text-wrap: nowrap;
+    width: 255px;
+    font-size: 1em;
+    padding-left: 9px;
+}
+
+@keyframes digitar {
+    0% {
+        width: 255px;
     }
 
-    main .projects {
-        background-color: white;
-        width:100vw;
-        height:500px;
-        display: flex;
-        justify-content: center;
+    50% {
+        width: 1px;
     }
 
-    main .projects h1 {
-        text-align: center;
+    100% {
+        width: 255px;
     }
 
-    main .projects aside iframe {
-        width: 20%;
-        height: 600px;
-        overflow-y: none;
-        padding: 50px;
-    }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-    @keyframes typing {
-        0% {
-            width: 0ch;
-        }
+.social {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    position: relative;
+    top: 45%;
+    margin-left: 30px;
     
-        50% {
-            width: 24ch;
-        }
-    
-        100% {
-            width: 0ch;
-        }
-    }
+}
 
-
+.social li {
+    margin: 10px;
     
+}
