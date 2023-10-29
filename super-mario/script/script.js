@@ -25,6 +25,9 @@ const loop = setInterval(()=>{
         mario.src = 'imagens/game-over.png'
         mario.style.width = '35px'
         mario.style.marginLeft = '15px'
+
+        const gameover = document.querySelector
+
     }
 }, 10)
 
