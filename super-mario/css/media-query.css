@@ -1,0 +1,10 @@
+
+
+@media screen (min-width: 500px) and (max-width: 2048px){
+    .tubo {
+        position: absolute;
+        width: 40px;
+        bottom: 0;
+        left: 10%;
+        animation: tubo-animation 3s linear infinite;
+    }
