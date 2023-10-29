@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
 <body>
     <audio id="music" src="songs/fundo.mp3" loop autoplay></audio>
+    <audio src="songs/smw_jump.mp3" id="pulo"></audio>
     <main>
         <div class="jogo">
             <img src="imagens/super-mario.gif" class="mario">
             <img src="imagens/tubo.png" class="tubo">
         </div>
     </main>
-
+    <button class="btn-class-name" onclick="pular()">
+        <span class="back"></span>
+        <span class="front"></span>
+      </button>
     <script src="script/script.js"></script>
     <script src="script/audio.js"></script>
 </body>

@@ -28,6 +28,8 @@ const loop = setInterval(()=>{
     }
 }, 10)
 
-document.addEventListener('keydown', jump)
-
-document.addEventListener('touchstart', jump)
+function pular() {
+    jump()
+    const pulo = document.querySelector('#pulo')
+    pulo.play()
+}
