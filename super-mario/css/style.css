@@ -104,6 +104,15 @@ main {
     }
 }
 
+footer {
+    position: absolute;
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    top: 60%;
+}
+
 
 
 .btn-class-name {
