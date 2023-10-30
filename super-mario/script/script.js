@@ -26,10 +26,15 @@ const loop = setInterval(()=>{
         mario.style.width = '35px'
         mario.style.marginLeft = '15px'
 
-        const gameover = document.querySelector
+        game()
 
     }
 }, 10)
+
+function game() {
+        const gameover = document.querySelector('#game-over')
+        gameover.play()
+}
 
 function pular() {
     jump()
