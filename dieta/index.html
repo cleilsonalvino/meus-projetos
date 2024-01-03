@@ -34,7 +34,7 @@
                     </p>
 
                     <p>
-                        <input type="submit" value="Enviar" id="enviar" >
+                        <input type="submit" value="Enviar" id="enviar" onclick="enviando()">
                     </p>
 
                 </form>
@@ -47,6 +47,13 @@
             alert("Dados enviados!")
             },1000)
         } 
+        
+        function enviando(){
+            setTimeout(function(){
+                var enviando = document.getElementById('enviar')
+                enviando.value = 'Enviando...'
+            }, 0)
+        }
         
     </script>
 </body>
