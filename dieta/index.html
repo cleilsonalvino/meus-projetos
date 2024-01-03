@@ -15,31 +15,40 @@
 
                     <p>
                         <label for="item">Item</label>
-                        <input type="text" name="Item" id="item" required placeholder="Digite o produto">
+                        <input class="dados" type="text" name="Item" id="item" required placeholder="Digite o produto" ()>
                     </p>
 
                     <p>
                         <label for="data">Data da Compra</label>
-                        <input type="date" name="Data da Compra" id="data" required>
+                        <input class="dados" type="date" name="Data da Compra" id="data" required>
                     </p>
 
                     <p>
                         <label for="quantidade">Quantidade</label>
-                        <input type="text" name="Quantidade" id="quantidade">
+                        <input class="dados" type="text" name="Quantidade" id="quantidade" placeholder="Digite a quant...." required>
                     </p>
 
                     <p>
                         <label for="valor">Valor</label>
-                        <input type="number" name="Valor" id="valor">
+                        <input class="dados" type="number" name="Valor" id="valor" required placeholder="Digite o valor">
                     </p>
 
                     <p>
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" id="enviar" onclick="submit()">
                     </p>
 
                 </form>
             </div>
         </section>
     </main>
+    <script>
+        function submit(){
+            var valor = Number(document.getElementById('valor').value);
+            if(valor.value <= 0){
+                alert("Valor inválido!")
+            }
+        } 
+        
+    </script>
 </body>
 </html>

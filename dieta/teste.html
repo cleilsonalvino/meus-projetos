@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .input-container {
+      position: relative;
+      width: 200px;
+      margin: 50px auto;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    label {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: top 0.3s, font-size 0.3s, color 0.3s;
+    }
+
+    .input-active label {
+      top: 10px;
+      font-size: 12px;
+      color: #333;
+    }
+  </style>
+  <title>Animated Placeholder</title>
+</head>
+<body>
+
+  <div class="input-container">
+    <input type="text" id="animatedInput" required>
+    <label for="animatedInput">Digite algo</label>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const input = document.getElementById('animatedInput');
+      const label = input.nextElementSibling;
+
+      input.addEventListener('focus', function() {
+        label.classList.add('input-active');
+      });
+
+      input.addEventListener('blur', function() {
+        if (!input.value.trim()) {
+          label.classList.remove('input-active');
+        }
+      });
+
+      // Se o input já estiver preenchido quando a página carrega
+      if (input.value.trim()) {
+        label.classList.add('input-active');
+      }
+    });
+  </script>
+
+</body>
+</html>
